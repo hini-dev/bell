@@ -54,8 +54,13 @@ function App() {
     <>
       <header className="site-header">
         <a className="brand" href="#home" onClick={closeMenu} aria-label="Bell Networks home">
-          <span className="brand-mark"><b>BELL</b><strong>NET</strong></span>
-          <span className="brand-name">BELL <b>NETWORKS</b><small>TECHNOLOGY • CONSULTING • INNOVATION</small></span>
+          <span className="brand-mark" aria-label="Bell Networks logo">
+            <span className="logo-bell">BELL</span>
+            <span className="logo-net">NET</span>
+          </span>
+         
+          <span className="brand-name">BELL <b>NETWORKS</b>
+          <small>TECHNOLOGY • CONSULTING • INNOVATION</small></span>
         </a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation">
           {menuOpen ? <X /> : <Menu />}
@@ -103,7 +108,7 @@ function App() {
             </div>
           </div>
           <div className="stat-strip">
-            <div><strong>2016</strong><span>Service journey began</span></div>
+            <div><strong>2015</strong><span>Service journey began</span></div>
             <div><strong>360°</strong><span>Business-focused approach</span></div>
             <div><strong>2023</strong><span>Expanded into AI & software</span></div>
             <div><strong>∞</strong><span>Room to innovate</span></div>
@@ -130,7 +135,7 @@ function App() {
           <div className="section-kicker">03 / OUR JOURNEY</div>
           <div className="timeline-head"><h2>Built on experience.<br/><span>Focused on tomorrow.</span></h2><p>Our capabilities have grown with the changing needs of business and technology.</p></div>
           <div className="timeline-track">
-            <div className="timeline-item"><b>2016</b><span className="dot"></span><h3>Our foundation</h3><p>Implementation, monitoring tools, Integrity Enterprise, managed services and consulting.</p></div>
+            <div className="timeline-item"><b>2015</b><span className="dot"></span><h3>Our foundation</h3><p>Implementation, monitoring tools, Integrity Enterprise, managed services and consulting.</p></div>
             <div className="timeline-item"><b>2023</b><span className="dot"></span><h3>New capabilities</h3><p>Unified communication, AI & machine learning and customized software development.</p></div>
             <div className="timeline-item"><b>Today</b><span className="dot"></span><h3>What's next</h3><p>Bringing technology, people and business priorities together to create lasting value.</p></div>
           </div>
@@ -202,7 +207,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <a className="brand footer-brand" href="#home"><span className="brand-mark"><b>BELL</b><strong>NET</strong></span><span className="brand-name">BELL <b>NETWORKS</b><small>TECHNOLOGY • CONSULTING • INNOVATION</small></span></a>
+        <a className="brand footer-brand" href="#home"><span className="brand-mark" aria-label="Bell Networks logo"><span className="logo-bell">BELL</span><span className="logo-net">NET</span></span><span className="brand-name">BELL <b>NETWORKS</b><small>TECHNOLOGY • CONSULTING • INNOVATION</small></span></a>
         <span>© {new Date().getFullYear()} Bell Networks. All rights reserved.</span>
         <a href="#home">Back to top ↑</a>
       </footer>
